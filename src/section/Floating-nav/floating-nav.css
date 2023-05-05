@@ -1,0 +1,31 @@
+.floating_icon{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    .floating_icon{
+        display: block;
+        background: var(--color-primary);
+        width: max-content;
+        padding: 0.7rem 1.7rem;
+        z-index: 2;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1.5rem;
+        display: flex;
+        gap: 1rem;
+        border-radius: 10px;
+        backdrop-filter: blur(15px);
+
+    }
+    .floating_icon a{
+        background: transparent;
+        padding: 3px;
+        border-radius: 50%;
+        display: flex;
+        color: white;
+        font-size: 24px;
+
+    }
+
+}

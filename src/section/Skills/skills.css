@@ -1,0 +1,129 @@
+#skills {
+    padding: 7.5rem 0;
+}
+
+.skill_container {
+    text-align: center;
+    position: relative;
+}
+
+
+.skill-display{
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+}
+.skill_left
+{
+    width:35%;
+}
+.heading_name{
+    margin-bottom: 2rem;
+}
+
+.skill_container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.skill-box .skill-bar{
+    height: 23px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background:rgb(191, 180, 180);
+}
+.skill-box .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background:var(--color-primary);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    text-align: center;
+}
+.skill-per.html{
+    width: 80%;
+    animation-delay: 0.5s;
+}
+.skill-per.css{
+    width: 75%;
+    animation-delay: 0.5s;
+}
+.skill-per.javascript{
+    width: 55%;
+    animation-delay: 0.5s;
+}
+.skill-per.reactjs{
+    width: 45%;
+    animation-delay: 0.5s;
+}
+.skill-per.nodejs{
+    width: 35%;
+    animation-delay: 0.5s;
+}
+.skill-per.c{
+    width: 70%;
+    animation-delay: 0.5s;
+}
+.skill-per.cpp{
+    width: 60%;
+    animation-delay: 0.5s;
+}
+.skill-per.java{
+    width: 55%;
+    animation-delay: 0.5s;
+}
+.skill-per.python{
+    width: 35%;
+    animation-delay: 0.5s;
+}
+.skill-per.dsa{
+    width: 30%;
+    animation-delay: 0.5s;
+}
+.tooltip{
+    color: var(--color-white);
+}
+
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@media (max-width: 600px) {
+.heading_name{
+    margin-bottom:0rem;
+}
+.skill-display{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: space-around;
+   
+}
+.skill_left
+{
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+.skill-box .skill-bar{
+    margin: 0;
+}
+.skill-box .skill-per{
+    margin: 0;
+}
+}

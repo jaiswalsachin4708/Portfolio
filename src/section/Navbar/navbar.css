@@ -1,0 +1,43 @@
+nav{
+    width: 100vw;
+    height: 5rem;
+    background: var(--color-primary);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow:0 1rem 1.5rem hsla(var(--primary-hue),68%,42%,30%) ;
+    transition: var(--transition);
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    width: 2.8rem;
+    border-radius:50%;
+    overflow: hidden;
+}
+.nav_menu{
+    display: flex;
+    gap:3rem;
+    font-size: 17px;
+}
+#theme_icon{
+    font-size: 2rem;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* for mobiles */
+
+@media screen and (max-width:1024px) {
+    .nav_menu{
+        display: none;
+    }
+}

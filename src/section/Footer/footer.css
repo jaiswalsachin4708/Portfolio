@@ -1,0 +1,21 @@
+footer{
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    padding: 9px 0px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+}
+.copy{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+.name h4{
+    color: var(--color-white);
+}
