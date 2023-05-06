@@ -11,7 +11,7 @@ const data=[
         Image:pic4,
         title: 'Temperature web application',
         github:'https://github.com/jaiswalsachin4708',
-        demo:'jaiswalsachin4708.github.io/Weather/'
+        demo:'https://jaiswalsachin4708.github.io/Weather/'
         
     },
     {
