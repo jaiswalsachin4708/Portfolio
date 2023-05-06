@@ -1,10 +1,19 @@
 import "./contact.css"
 import { GrMail } from "react-icons/gr"
-import { BsMessenger } from "react-icons/bs"
+import { AiFillLinkedin } from "react-icons/ai"
 import { IoLogoWhatsapp } from "react-icons/io"
 import { HiLocationMarker } from "react-icons/hi"
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_tk60qa5', 'template_55hmju8', form.current, 'vdI0QiF4zI6kmV0M_')
+      e.target.reset()
+  };
   return (
     <section id="contact">
       <div className="container">
@@ -18,8 +27,8 @@ const Contact = () => {
                 <a href="mailto:Sachinjaiswal4708@gmail.com" target="_blank">Send</a>
               </article>
               <article className="contact_option">
-                <BsMessenger className="app" />
-                <h4>Messenger</h4>
+                <AiFillLinkedin className="app" />
+                <h4>Linkedin</h4>
                 <a href="mailto:Sachinjaiswal4708@gmail.com" target="_blank">Send</a>
               </article>
               <article className="contact_option">
@@ -45,7 +54,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form className="port_input">
+          <form ref={form} onSubmit={sendEmail} className="port_input">
             <input type="text" name="name" placeholder="Enter Your Name" required />
             <input type="text" name="email" placeholder="Enter Your Email" required />
             <textarea name="message" rows={7} placeholder="Enter Your Message" required />
